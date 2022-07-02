@@ -7,9 +7,9 @@ tasks:
     before: echo 'Development installation'
     init: |
       pip install -r common/dockerfiles/requirements.txt
-      inv docker.build
-      inv docker.pull --only-required
-    command: inv docker.up  --init
+    #  inv docker.build
+    #inv docker.pull --only-required
+    #command: inv docker.up  --init
 
 ports:
   - port: 8000
