@@ -4,7 +4,7 @@
 
 tasks:
   - name: Development installation 
-    before: echeo 'Development installation'
+    before: echo 'Development installation'
     init: |
       pip install -r common/dockerfiles/requirements.txt
       inv docker.build
